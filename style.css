@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Big Shoulders Display", "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 400;
+  color: hsl(0, 0%, 95%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25rem;
+  border-radius: 50px;
+}
+
+.card-info {
+  padding: 4.5rem 4rem;
+}
+
+.car-icon {
+  width: 5.2rem;
+  height: 3.2rem;
+}
+
+.car-type {
+  font-size: 3.6rem;
+  font-weight: 700;
+  padding: 2.5rem 0;
+}
+
+.car-info {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Lexend Deca";
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-bottom: 7.5rem;
+}
+
+button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.3rem 3rem;
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+/*****  *****/
+/* COLORS*/
+/*****  *****/
+
+.sedan-type-info {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.suv-type-info {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-type-info {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.btn-sedan {
+  color: hsl(31, 77%, 52%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.btn-suv {
+  color: hsl(184, 100%, 22%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.btn-sedan:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+
+.btn-suv:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+
+.btn-luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 37.5rem) {
+  .container {
+    display: grid;
+    padding: 1rem 5rem 0 2.5rem;
+  }
+
+  .sedan-type-info {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .luxury-type-info {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .car-info {
+    padding: 0 0 3rem 0;
+  }
+}
